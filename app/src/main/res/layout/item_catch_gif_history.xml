@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/tv_catch_count"
+
+            >
+
+            <ImageView
+                android:id="@+id/iv_catch_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/default_img"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_catch_history_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="娃娃机扣费"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_catch_history_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="2017-11-06 20:50:22"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_catch_count"
+            android:text=""
+            android:textColor="@color/color_FFA54F"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_999999"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

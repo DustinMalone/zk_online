@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="288dp"
+        android:background="@drawable/bg_tis">
+
+        <TextView
+            android:id="@+id/tv_window_inputcode_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="100dp"
+            android:textColor="#633c04"
+            android:text="输入邀请码获得更多游戏币"
+            android:lines="1"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/et_window_invite_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item_charge_money"
+            android:gravity="center"
+            android:hint="请输入邀请码"
+            android:layout_marginLeft="20dp"
+            android:lines="1"
+            android:maxLength="20"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="150dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_999999"
+            android:textSize="14sp" />
+    
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginRight="25dp"
+            android:id="@+id/btn_inputcode_dialog_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="下次提醒"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_rankings_btn"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_marginLeft="25dp"
+            android:id="@+id/btn_inputcode_dialog_yes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_rankings_btn_red"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

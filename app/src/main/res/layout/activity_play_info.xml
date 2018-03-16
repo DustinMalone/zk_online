@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+
+        >
+        <com.zk.zk_online.weight.circleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_img"
+            android:id="@+id/img_user"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="墨镜超人"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:id="@+id/tv_user_name"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_user"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_device_coin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/shouye_c"
+            android:textSize="15sp"
+            android:drawablePadding="5dp"
+            android:text="20币/次"
+            />
+    </RelativeLayout>
+
+   <android.support.v4.widget.SwipeRefreshLayout
+       android:layout_width="match_parent"
+       android:id="@+id/swip_layout"
+       android:layout_height="match_parent">
+       <GridView
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:background="@color/color_FFA54F"
+           android:id="@+id/gridview"
+           android:padding="10dp"
+           android:horizontalSpacing="20px"
+           android:verticalSpacing="40px"
+           android:numColumns="2"
+           android:layout_height="match_parent"/>
+   </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

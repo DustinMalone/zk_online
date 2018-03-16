@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zk.zk_online.HomeModel.View.RankingsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_rankings_title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:paddingTop="20dp"
+        android:background="@color/bg_title_yellow"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:clickable="true"
+            android:onClick="backfinish"
+            android:id="@+id/iv_rank_img_back"
+            android:src="@drawable/back_icon"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:textSize="28sp"
+            android:text="抓神排行榜"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_marginTop="68dp"
+        android:id="@+id/ll_rankings_info"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/bg_title_yellow">
+        
+        <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="85dp">
+            <com.zk.zk_online.weight.circleImageView
+                android:id="@+id/civ_item_rankings_pic_s"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/rankings_second"/>
+
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="2"
+                android:background="@drawable/bg_white_textview_oval"
+                android:textColor="#6c4102"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/civ_item_rankings_s_name"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="#6c4102"/>
+
+
+        <TextView
+            android:id="@+id/civ_item_rankings_s_times"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:lines="1"
+            android:text=""
+            android:textColor="#f55555"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="98dp"
+                android:layout_height="105dp">
+                <com.zk.zk_online.weight.circleImageView
+                    android:id="@+id/civ_item_rankings_pic_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="19dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="12dp"
+                    android:background="@drawable/rankings_first"/>
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="1"
+                    android:background="@drawable/bg_white_textview_oval"
+                    android:textColor="#6c4102"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/civ_item_rankings_f_name"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="#6c4102"/>
+
+
+            <TextView
+                android:id="@+id/civ_item_rankings_f_times"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:lines="1"
+                android:text=""
+                android:textColor="#f55555"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="85dp">
+                <com.zk.zk_online.weight.circleImageView
+                    android:id="@+id/civ_item_rankings_pic_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rankings_third"/>
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="3"
+                    android:background="@drawable/bg_white_textview_oval"
+                    android:textColor="#6c4102"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/civ_item_rankings_t_name"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="#6c4102"/>
+
+
+            <TextView
+                android:id="@+id/civ_item_rankings_t_times"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text=""
+                android:lines="1"
+                android:textColor="#f55555"/>
+
+
+        </LinearLayout>
+
+        
+
+    </RelativeLayout>
+
+    
+    <LinearLayout
+        android:layout_alignTop="@+id/lv_rankings_info"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/btn_rankings_pick_god"
+            android:background="@drawable/bg_rankings_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:lines="1"
+            android:onClick="onClick"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="抓神榜"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_rankings_pick_wealth"
+            android:background="@drawable/bg_rankings_btn"
+            android:onClick="onClick"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:lines="1"
+            android:text="富豪榜"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_rankings_pick_week"
+                android:background="@drawable/bg_rankings_btn"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:onClick="onClick"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:lines="1"
+                android:text="周抓取榜"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_rankings_pick_month"
+            android:background="@drawable/bg_rankings_btn"
+            android:onClick="onClick"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="月抓取榜"/>
+    </LinearLayout>
+    
+    <ListView
+        android:layout_below="@id/ll_rankings_info"
+        android:paddingTop="20dp"
+        android:id="@+id/lv_rankings_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:scrollbars="none">
+        
+    </ListView>
+
+</RelativeLayout>

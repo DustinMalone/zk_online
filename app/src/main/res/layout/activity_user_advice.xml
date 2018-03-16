@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.zk.zk_online.HomeModel.View.UserAdviceActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <ListView
+        android:id="@+id/lv_useradvice_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:dividerHeight="15dp"
+        android:scrollbars="none"
+        android:divider="@color/transparent"
+        ></ListView>
+
+</LinearLayout>

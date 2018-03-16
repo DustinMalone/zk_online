@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    signingConfigs {
+
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.zk.zk_online"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 58
+        versionName "v20170119"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "d8c2e4f937a2409d5441bbac", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    signingConfigs {
+        debug {
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+            storeFile file("./debug.keystore")
+            storePassword "android"
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'com.orhanobut:logger:2.1.1'
+    compile 'com.bigkoo:alertview:1.0.3'
+    compile 'com.kaopiz:kprogresshud:1.1.0'
+    compile 'com.ohmerhe.kolley:kolley:0.3.0'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'com.lovedise:permissiongen:0.0.6'
+    compile 'com.jwenfeng.pulltorefresh:library:1.2.5'
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.9.16'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.+'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile files('libs/amqp-client-3.0.4.jar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/AgoraSDK.jar')
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile 'cn.jiguang.sdk:jpush:3.0.9'  // 此处以JPush 3.0.9 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.7'  // 此处以JCore 1.1.7 版本为例。
+}

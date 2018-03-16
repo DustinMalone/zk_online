@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.zk.zk_online.HomeModel.View.AddressDetailActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_address_detail_all"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/fahuo_g"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系人："
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_address_detail_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="墨镜超人"
+                android:layout_marginRight="20dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+            <CheckBox
+                android:enabled="false"
+                android:id="@+id/cb_address_detail_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/checkbox2"
+                android:drawablePadding="5dp"
+                android:button="@null"
+                android:text="先生"/>
+
+            <CheckBox
+                android:enabled="false"
+                android:id="@+id/cb_address_detail_lady"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/checkbox2"
+                android:drawablePadding="5dp"
+                android:button="@null"
+                android:text="女士"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="联系电话："
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_address_detail_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="121321343435"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="所在地区："
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_address_detail_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:lines="1"
+                android:gravity="center"
+                android:text="广东的额额"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="省份"
+                android:visibility="gone"
+                android:textColor="@color/color_A59E9E"
+                android:textSize="14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_address_detail_city"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广州的是"
+                android:lines="1"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="城市"
+                android:visibility="gone"
+                android:textColor="@color/color_A59E9E"
+                android:textSize="14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_address_detail_dri"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="番禺"
+                android:lines="1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="区/县"
+                android:visibility="gone"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/color_A59E9E"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="详细地址："
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_address_detail_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:hint=""
+                android:lines="2"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_address_view_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/jp_29"
+        />
+
+</LinearLayout>

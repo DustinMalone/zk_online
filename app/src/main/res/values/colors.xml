@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="title_bg">#393A3F</color>
+    <color name="color_f05c28">#F38012</color>
+    <color name="color_FFA54F">#FFC926</color>
+    <color name="color_F5E1CF49">#F5E1CF49</color>
+    <color name="gray">#FFC1C0C0</color>
+    <color name="color_FFFFF7B2">#FFFFF7B2</color>
+    <color name="color_303030">#303030</color>
+    <color name="color_ff5868">#ff5868</color>
+    <color name="color_90000000">#90000000</color>
+    <color name="color_BC7F25">#FFBC7F25</color>
+
+    <color name="color_7F470B">#7F470B</color>
+
+    <color name="color_A59E9E">#A59E9E</color>
+
+    <color name="color_727272">#727272</color>
+
+    <color name="color_08ffffff">#08ffffff</color>
+    <color name="color_A4E14D">#A4E14D</color>
+    <color name="color_FD6048">#FD6048</color>
+    <color name="color_A2A2A2">#A2A2A2</color>
+
+    <color name="color_999999">#999999</color>
+    <color name="color_f37928">#f37928</color>
+    <color name="color_6c4102">#6c4102</color>
+    <color name="color_39ff43">#39ff43</color>
+    <color name="bg_title_yellow">#ffc926</color>
+    <color name="color_9c5101">#9c5101</color>
+    <color name="color_eaeaea">#eaeaea</color>
+</resources>

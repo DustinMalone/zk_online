@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              android:background="@color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:background="@drawable/gift_shop_detail_bg_dialog"
+        android:layout_gravity="center_horizontal">
+        
+        <TextView
+            android:id="@+id/tv_window_gift_shop_detail_selectcount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="我的娃娃(0/6)"/>
+
+
+
+
+        <ListView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/lv_window_gift_shop_detail"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:dividerHeight="0.5dp"
+            android:divider="#eaeaea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scrollbars="none"
+            >
+        </ListView>
+        
+        <Button
+            android:id="@+id/btn_window_gift_shop_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:background="@drawable/dialog_btn_gift_shop_detail"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

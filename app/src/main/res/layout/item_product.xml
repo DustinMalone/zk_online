@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:background="@drawable/wodelipin_b"
+        android:orientation="horizontal"
+        
+        >
+        <ImageView
+            android:id="@+id/iv_product_detail_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/fahuo_a"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/default_img"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/tv_product_detail_goodsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="墨镜超人"
+                    android:textColor="@color/color_FFA54F"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/tv_product_detail_goodsnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/color_FFA54F"
+                    android:textSize="18sp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_product_detail_goodsindex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:text="编号：2018223232"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+                    <div style="margin:40px"><font size=12> <center>常见问题回答</center></font>
+<br>
+
+<font size=10><font color="#F6C51F">一、游戏</font></font><br>
+<font size=8>1.游戏中联机突然中断，或出现其他故障怎么办？</font><br>
+
+<font size=7><font color="#808080">在游戏结束后选择对应的故障情况进行申诉。我们会及时找出问题进行修复，并依照当下情况决定对您做出相应补偿。 </font><br>
+
+<font size=8>2.爪子卡住没办法玩？</font><br>
+
+<font size=7><font color="#808080">发生爪子卡住时，您可以举报该台机器，我们会尽快对机器进行修复，请您耐心等待或先使用其他机器。</font><br>
+
+<font size=8>3.明明抓到奖品，系统却显示没有？</font><br>
+
+<font size=7><font color="#808080">有时系统会做出判断错误，您可以通过抓取判定按钮进行申诉，我们会及时查看记录对您的申诉做出相应的判定。但实际过程没有取得奖品的时候，我们会判定该次申诉无效，还请理解。</font><br>
+
+<font size=10><font color="#F6C51F">二、奖品</font></font><br>
+
+<font size=8>1.在哪里可以查看我抓到的奖品？</font><br>
+
+<font size=7><font color="#808080">您可以通过点击主菜单左边的图标，在我的礼物查看您抓的娃娃，并对它们做出相应处理。</font><br>
+
+<font size=8>2.得到的礼品可以保留多久？<font><br>
+
+<font size=7><font color="#808080">您的礼品默认保留15天，如逾期未做出任何处理系统会自动将奖品兑换成相应数额游戏币放入您账户中。</font><br>
+
+<font size=8>3.抓到的礼品可否替换？</font><br>
+
+<font size=7><font color="#808080">我们寄送给您的是您实际所夹到的奖品，我们不提供换货服务，还请您谅解，谢谢。</font><br>
+</div>

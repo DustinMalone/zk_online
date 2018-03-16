@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:civ="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:id="@+id/main_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="#ffc926">
+
+        <com.zk.zk_online.weight.circleImageView
+            android:id="@+id/tv_user"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            civ:civ_border_width="2dp"
+            civ:civ_border_color="@color/color_6c4102"
+            android:clickable="false"
+            android:src="@drawable/default_img"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+         />
+
+        <TextView
+            android:id="@+id/iv_main_user_hong"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@id/tv_user"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="-1dp"
+            android:background="@drawable/sel_oval_bg_red_textview"
+            android:visibility="gone"
+          />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/home_top" />
+
+        <ImageView
+            android:id="@+id/tv_pay"
+            android:layout_width="35dp"
+            android:layout_height="28dp"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:src="@mipmap/chong" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           ></FrameLayout>
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

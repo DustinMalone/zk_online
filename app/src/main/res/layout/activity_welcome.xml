@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg_start"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_welcome_font"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/font"/>
+
+
+    <ImageView
+        android:layout_below="@id/iv_welcome_font"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ji"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_welcome_ban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible"
+        android:textColor="@color/color_7F470B"
+        android:text="Copyright © 2010-2017"/>
+
+    <TextView
+        android:layout_above="@id/tv_welcome_ban"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:lines="1"
+    android:textSize="14sp"
+        android:visibility="invisible"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/color_7F470B"
+    android:text=""/>
+
+
+</RelativeLayout>

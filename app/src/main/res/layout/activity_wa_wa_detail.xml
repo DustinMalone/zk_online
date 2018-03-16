@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zk.zk_online.HomeModel.View.WaWaDetailActivity">
+
+    <include
+        layout="@layout/layout_title"/>
+
+    <WebView
+        android:id="@+id/wb_wa_wa_detail_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"></WebView>
+
+    <Button
+        android:id="@+id/btn_wa_wa_detail_play"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_FD6048"
+        android:text="抓走"
+        android:onClick="onClick"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+    />
+
+</RelativeLayout>

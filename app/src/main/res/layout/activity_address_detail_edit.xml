@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.zk.zk_online.HomeModel.View.AddressDetailActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/fahuo_g"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系人："
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_address_edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="5dp"
+                android:hint="请输入收货人姓名"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_address_edit_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox2"
+                android:drawablePadding="5dp"
+                android:text="先生"/>
+
+            <CheckBox
+                android:id="@+id/cb_address_edit_lady"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/checkbox2"
+                android:drawablePadding="5dp"
+                android:button="@null"
+                android:text="女士"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="联系电话："
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_address_edit_usertel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint=""
+                android:lines="1"
+                android:padding="5dp"
+                android:maxLength="11"
+                android:inputType="number"
+                android:ellipsize="end"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="所在地区："
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/sp_address_edit_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:lines="1"
+                android:ellipsize="end"
+                android:clickable="true"
+                android:textColorHint="@color/grey"
+                android:hint="选择省份"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:text="省份"
+                android:visibility="gone"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/sp_address_edit_city"
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:textColorHint="@color/grey"
+                android:hint="选择城市"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:text="城市"
+                android:visibility="gone"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/sp_address_edit_district"
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:lines="1"
+                android:ellipsize="end"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:textColorHint="@color/grey"
+                android:hint="选择区/县"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:text="区/县"
+                android:visibility="gone"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="详细地址："
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_address_edit_useraddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:hint=""
+                android:lines="2"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_address_edit_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/btn_save_address"
+        />
+
+</LinearLayout>

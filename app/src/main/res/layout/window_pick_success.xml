@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pick_success"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="如此的所向无敌，连苍天都感动了"
+            android:textColor="#616161"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:lines="2"
+            android:layout_marginBottom="120dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="快去向您的小伙伴炫耀一番~"
+            android:textColor="#616161"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:lines="2"
+            android:layout_marginBottom="95dp"/>
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/default_img"
+        android:id="@+id/img_git"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="95dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="right"
+            android:id="@+id/tv_dialog_time"
+            android:textColor="@color/black"
+            android:text="6"
+            android:visibility="gone"
+            android:textSize="28sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/transparent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_yellow_play"
+                android:id="@+id/bt_again"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:text="奋力再战"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_red_play"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="分享炫耀(6s)"
+                android:id="@+id/bt_stop"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

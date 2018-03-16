@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_item_rankings_no"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:maxLength="2"
+        android:lines="1"
+        android:textColor="#6c4102"/>
+
+
+    <com.zk.zk_online.weight.circleImageView
+        android:id="@+id/civ_item_rankings_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/default_img"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="28dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_item_rankings_name"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text=""
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:textColor="#6c4102"/>
+
+    <TextView
+        android:id="@+id/tv_item_rankings_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:lines="1"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:ellipsize="end"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:textColor="#f55555"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e4e1e1"/>
+</LinearLayout>

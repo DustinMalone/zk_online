@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              android:background="@color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="380dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_window_charge_money_round"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_window_charge_money_round_rl"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chongzhitaocan"/>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:text="账户币数"/>
+
+                <TextView
+                    android:id="@+id/tv_window_charge_money_usercoin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/qianbi"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:drawablePadding="5dp"
+                    android:background="@drawable/bg_white_allround_window_charge"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20px">
+
+
+
+        <GridView
+            android:id="@+id/lv_window_charge_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:verticalSpacing="20px"
+            android:horizontalSpacing="20px"
+            android:numColumns="2"
+            android:scrollbars="none"
+            >
+        </GridView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

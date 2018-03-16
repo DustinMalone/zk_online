@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.zk.zk_online.HomeModel.View.SystemMessageActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <ListView
+        android:id="@+id/lv_system_message_info"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:dividerHeight="15dp"
+        android:divider="@color/transparent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

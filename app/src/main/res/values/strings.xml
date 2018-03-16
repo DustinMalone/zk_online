@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">抓萌抓娃娃</string>
+
+    <string name="dialog_title">提示</string>
+    <string name="dialog_hint1">登录中...</string>
+    <string name="dialog_hint2">请稍后...</string>
+    <string name="dialog_title2">下载提示</string>
+    <string name="dialog_msg6">发现新版本，您要更新吗？</string>
+    <string name="hint1">暂未开放，敬请期待！</string>
+    <string name="back">返回</string>
+    <string name="exit">再按一次退出程序</string>
+    <string name="home_grzx">个人中心</string>
+    <string name="home_xtxx">系统消息</string>
+    <string name="advice_info">请将您遇到的问题/产品建议反馈给我们，建议您描述清楚：时间,房间,尽可能详细的问题描述，这能让我们更好的解决您的问题哦！</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="title_activity_scan_code_activity">ScanCodeActivityActivity</string>
+</resources>

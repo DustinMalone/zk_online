@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EAEB"
+    android:orientation="vertical"
+    tools:context="com.zk.zk_online.HomeModel.View.GiftShopActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:paddingTop="20dp"
+        android:clipChildren="false"
+        android:background="@color/color_ff5868"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:id="@+id/iv_gift_shop_img_back"
+            android:onClick="backfinish"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/back_icon_white"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:text="积分商城"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gift_shop_bg_userimg"
+            android:orientation="horizontal">
+
+            <com.zk.zk_online.weight.circleImageView
+                android:id="@+id/civ_gift_shop_userimg"
+                android:layout_width="30dp"
+                android:layout_marginLeft="-2dp"
+                android:layout_height="30dp"
+                android:src="@drawable/default_img"/>
+
+            <TextView
+                android:id="@+id/tv_gift_shop_usergiftnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:drawablePadding="5dp"
+                android:textColor="#797c7d"
+                android:lines="1"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/gift_shop_wawa"
+                android:text=""
+                android:ellipsize="end"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.zk.zk_online.weight.HeaderGridView
+        android:id="@+id/hgv_gift_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:numColumns="2"
+        android:verticalSpacing="20px"
+        android:horizontalSpacing="20px">
+
+    </com.zk.zk_online.weight.HeaderGridView>
+
+    </LinearLayout>
+
+</LinearLayout>
